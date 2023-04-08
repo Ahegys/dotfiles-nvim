@@ -1,0 +1,16 @@
+{
+    "workspace.library": [
+        "/home/anderson/.config/nvim",
+        "/home/anderson/.local/share/nvim/site",
+        "/home/anderson/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+        "/home/anderson/.local/share/nvim/site/pack/packer/start/mason.nvim",
+        "/home/anderson/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/home/anderson/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+        "/home/anderson/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+        "/home/anderson/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/share/nvim/runtime/pack/dist/opt/matchit",
+        "/home/anderson/.config/nvim/after",
+        "${3rd}/luassert/library"
+    ]
+}
