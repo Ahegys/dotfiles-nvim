@@ -13,5 +13,6 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+vim.g.polyglot_disable = "autoindent"
 vim.opt.rtp:prepend(lazypath)
-vim.cmd "colorscheme space_vim_theme"
+vim.cmd "colorscheme onedark_vivid"

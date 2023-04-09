@@ -6,6 +6,8 @@ lazy.setup({
 	{"L3MON4D3/LuaSnip"},
 	{"BurntSushi/ripgrep"},
 	{"hrsh7th/cmp-buffer"},
+	{"sheerun/vim-polyglot"},
+	{"rcarriga/nvim-notify"},
 	{"hrsh7th/cmp-nvim-lsp"},
 	{"onsails/lspkind.nvim"},
 	{"Mofiqul/dracula.nvim"},
@@ -14,11 +16,19 @@ lazy.setup({
 	{"windwp/nvim-ts-autotag"},
 	{"williamboman/mason.nvim"},
 	{"p00f/clangd_extensions.nvim"},
+	{"olimorris/onedarkpro.nvim", priority = 1000},
 	{"lukas-reineke/indent-blankline.nvim"},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 	{"nvim-telescope/telescope.nvim", dependencies = "nvim-lua/plenary.nvim"},
-	{"nvim-tree/nvim-tree.lua", dependencies = 'nvim-tree/nvim-web-devicons'},
-	{'akinsho/bufferline.nvim', version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
+	{'romgrk/barbar.nvim', dependencies = 'nvim-tree/nvim-web-devicons'},
+	{
+  "nvim-neotest/neotest",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "nvim-treesitter/nvim-treesitter",
+    "antoinemadec/FixCursorHold.nvim"
+ 	 }
+	},
 	{"glepnir/lspsaga.nvim",
 		event = "LspAttach",
 		config = function()
@@ -50,6 +60,14 @@ lazy.setup({
 			{"nvim-treesitter/nvim-treesitter"}
 		}
 	},
+	{
+  "nvim-neo-tree/neo-tree.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  },
 	-- Themes
 	{"kyoz/purify"}, -- colorscheme purify
 	{"kabbamine/yowish.vim"}, -- colorscheme yowish

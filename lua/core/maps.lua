@@ -24,7 +24,7 @@ local my_keymaps = {
   { 'n', 'te', ':tabedit<Return>', { silent = true } },
   { 'n', 'ss', ':split<Return><C-w>w', { silent = true } },
   { 'n', 'sv', ':vsplit<Return><C-w>w', { silent = true } },
-	{ 'n', '<space>e', ':NvimTreeToggle<CR>', { silent = true } },
+	{ 'n', '<space>e', ':NeoTreeFocusToggle<CR>', { silent = true } },
 	-- LspSaga Keymaps
 	{'n', "rn", "<cmd>Lspsaga rename<CR>"},
 	{'n', "gh", "<cmd>Lspsaga lsp_finder<CR>"},
