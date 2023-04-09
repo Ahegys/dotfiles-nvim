@@ -16,11 +16,11 @@ lazy.setup({
 	{"windwp/nvim-ts-autotag"},
 	{"williamboman/mason.nvim"},
 	{"p00f/clangd_extensions.nvim"},
-	{"olimorris/onedarkpro.nvim", priority = 1000},
 	{"lukas-reineke/indent-blankline.nvim"},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 	{"nvim-telescope/telescope.nvim", dependencies = "nvim-lua/plenary.nvim"},
 	{'romgrk/barbar.nvim', dependencies = 'nvim-tree/nvim-web-devicons'},
+	{"NvChad/nvterm"},
 	{
   "nvim-neotest/neotest",
   dependencies = {
@@ -76,4 +76,5 @@ lazy.setup({
 	{"dunstontc/vim-vscode-theme"}, -- colorscheme dark-plus
 	{"liuchengxu/space-vim-theme"}, -- colorscheme space-vim-theme
 	{"marciomazza/vim-brogrammer-theme"}, -- colorscheme brogrammer
+	{"olimorris/onedarkpro.nvim", priority = 1000, config = function() require("onedarkpro").setup({options = { transparency = true }})end}, -- colorscheme onedark, onedark_vivid
 })
