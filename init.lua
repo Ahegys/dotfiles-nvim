@@ -1,7 +1,3 @@
-require "core.base"
-require "core.maps"
-require "core.lazy"
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -13,6 +9,11 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
-vim.g.polyglot_disable = "autoindent"
 vim.opt.rtp:prepend(lazypath)
+
+require "core.base"
+require "core.lazy"
+require "core.maps"
+
+vim.g.polyglot_disable = "autoindent"
 vim.cmd "colorscheme onedark_vivid"
