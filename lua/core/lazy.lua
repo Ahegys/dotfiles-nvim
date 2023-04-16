@@ -76,5 +76,6 @@ lazy.setup({
 	{"dunstontc/vim-vscode-theme"}, -- colorscheme dark-plus
 	{"liuchengxu/space-vim-theme"}, -- colorscheme space-vim-theme
 	{"marciomazza/vim-brogrammer-theme"}, -- colorscheme brogrammer
+	{ "ellisonleao/gruvbox.nvim", priority = 1000},
 	{"olimorris/onedarkpro.nvim", priority = 1000, config = function() require("onedarkpro").setup({options = { transparency = true }})end}, -- colorscheme onedark, onedark_vivid
 })
