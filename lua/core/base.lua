@@ -13,8 +13,8 @@ local options = {
 	clipboard = "unnamedplus", -- Allows copying to the system clipboard
 -- Editor settings
 	expandtab = false, -- Converts tabs to spaces
-	tabstop = 2, -- Sets the size of a tab
-	shiftwidth = 2, -- Sets the size of an indentation
+	tabstop = 4, -- Sets the size of a tab
+	shiftwidth = 4, -- Sets the size of an indentation
 	smartindent = true, -- Automatically indents
 	undofile = true, -- Enables persistent undo
 	incsearch = true, -- Enables incremental search
