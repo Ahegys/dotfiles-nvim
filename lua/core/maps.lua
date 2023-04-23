@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 
 local my_keymaps = {
+  {'n', "<C-s>",':w<CR>'},
+  {'n', "<C-q>",':q!<CR>'},
   { 'n', '+', '<C-a>' },
   { 'n', '-', '<C-x>' },
   { 'n', 'dw', 'vb"_d' },
@@ -9,10 +11,10 @@ local my_keymaps = {
   { '', 'sj', '<C-w>j' },
   { '', 'sl', '<C-w>l' },
   { '', 's<up>', '<C-w>j' },
-  { '', 's<down>', '<C-w>k' },
   { '', 's<left>', '<C-w>h' },
   { '', '<Space>', '<C-w>w' },
   { '', 's<right>', '<C-w>l' },
+  { '', 's<down>', '<C-w>k' },
   { 'n', '<C-a>', 'gg<S-v>G' },
   { 'n', '<C-w><up>', '<C-w>+' },
   { 'n', '<C-w><left>', '<C-w><' },
@@ -32,7 +34,11 @@ local my_keymaps = {
 	{'n', "<leader>gp", "<cmd>Lspsaga goto_definition<CR>"},
 	{'n', "<leader>ar", "<cmd>Lspsaga rename ++project<CR>"},
 	{'n', "<leader>ca","<cmd>Lspsaga code_action<CR>"},
-
+  -- NewKeymaps
+  {'n', "<A-Up>", "ddkP"},
+  {'n', "<A-Down>", "ddjP"},
+  {'n', "<S-Right>", "v<Right>"},
+  {'n', "<S-Left>", "v<Left>"},
 }
 
 for _, mapping in ipairs(my_keymaps) do
