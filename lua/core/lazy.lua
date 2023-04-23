@@ -70,6 +70,7 @@ lazy.setup({
   },
 	-- Themes
 	{"kyoz/purify"}, -- colorscheme purify
+	{"Mofiqul/vscode.nvim"},
 	{"kabbamine/yowish.vim"}, -- colorscheme yowish
 	{"adrian5/oceanic-next-vim"}, -- colorscheme oceanicnext
 	{"liuchengxu/space-vim-dark"}, -- colorscheme space-vim-dark
