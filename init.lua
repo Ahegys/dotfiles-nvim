@@ -15,5 +15,7 @@ require "core.base"
 require "core.lazy"
 require "core.maps"
 
+vim.o.background = 'dark'
 vim.g.polyglot_disable = "autoindent"
 vim.cmd "colorscheme dark_plus"
+vim.cmd [[:hi Delimiter guifg=#FFFFF]]

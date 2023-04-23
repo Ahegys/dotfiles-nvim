@@ -15,6 +15,7 @@ lazy.setup({
 	{"windwp/nvim-autopairs"},
 	{"windwp/nvim-ts-autotag"},
 	{"williamboman/mason.nvim"},
+	{"nvim-lualine/lualine.nvim"},
 	{"p00f/clangd_extensions.nvim"},
 	{"lukas-reineke/indent-blankline.nvim"},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
@@ -71,11 +72,14 @@ lazy.setup({
 	-- Themes
 	{"kyoz/purify"}, -- colorscheme purify
 	{"Mofiqul/vscode.nvim"},
+	{"tpope/vim-vividchalk"},
 	{"kabbamine/yowish.vim"}, -- colorscheme yowish
 	{"adrian5/oceanic-next-vim"}, -- colorscheme oceanicnext
 	{"liuchengxu/space-vim-dark"}, -- colorscheme space-vim-dark
 	{"dunstontc/vim-vscode-theme"}, -- colorscheme dark-plus
 	{"liuchengxu/space-vim-theme"}, -- colorscheme space-vim-theme
+	{"adampasz/stonewashed-themes"},
+	{"jdsimcoe/hyper.vim"},
 	{"marciomazza/vim-brogrammer-theme"}, -- colorscheme brogrammer
 	{ "ellisonleao/gruvbox.nvim", priority = 1000},
 	{"olimorris/onedarkpro.nvim", priority = 1000, config = function() require("onedarkpro").setup({options = { transparency = true }})end}, -- colorscheme onedark, onedark_vivid
