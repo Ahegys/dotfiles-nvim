@@ -16,4 +16,4 @@ require "core.lazy"
 require "core.maps"
 
 vim.g.polyglot_disable = "autoindent"
-vim.cmd "colorscheme gruvbox"
+vim.cmd "colorscheme dark_plus"
